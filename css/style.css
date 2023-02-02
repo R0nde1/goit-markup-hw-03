@@ -113,19 +113,26 @@ body {
 
 
 .wrapper-container {
-
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
 
     border-bottom: 1px solid #ECECEC;
 
     background: var(--primary-bg-color);
 }
 
-.wrapper-nav-container {}
+.wrapper-nav-container {
+    display: flex;
+    align-items: center;
+}
 
 .wrapper-logo-link {
-    display: inline-block;
-    font-family: 'Raleway', sans-serif;
 
+
+    font-family: 'Raleway', sans-serif;
+    margin-right: 93px;
+    padding-top: 24px;
     padding-bottom: 24px;
     text-decoration: none;
     font-size: 26px;
@@ -141,10 +148,18 @@ body {
 
 
 .wrapper-nav-list {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 50px;
+
+
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    padding-top: 32px;
 
     padding-bottom: 32px;
     text-decoration: none;
@@ -152,13 +167,30 @@ body {
     color: var(--title-text-color);
 }
 
+.wrapper-nav-menu {
+    margin-left: 0;
+
+}
+
 .wrapper-nav-item {
+
+    margin-right: 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--title-text-color);
+}
+
+.contacts-bar {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
 }
 
 
@@ -173,6 +205,7 @@ body {
 }
 
 .contacts-bar-tel {
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -268,6 +301,9 @@ body {
 .our-peculiarities-container {
     padding-top: 94px;
     padding-bottom: 94px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
 .our-peculiarities {
@@ -276,6 +312,10 @@ body {
 }
 
 .our-peculiarities-list {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 30px;
 
     color: var(--primary-text-color);
 }
@@ -317,7 +357,12 @@ body {
 
 }
 
-.what-do-we-do-container-list {}
+.what-do-we-do-container-list {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 30px;
+}
 
 /* Our-team */
 
@@ -350,7 +395,12 @@ body {
     color: var(--title-text-color);
 }
 
-.our-team-container-list {}
+.our-team-container-list {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 30px;
+}
 
 .product-designer {
     width: 270px;
@@ -434,7 +484,9 @@ body {
     color: var(--accent);
 }
 
-.address-container {}
+.address-container {
+    padding-bottom: 60px;
+}
 
 .footer-physical-address {
     text-decoration: none;
@@ -488,10 +540,24 @@ body {
 
 .portfolio {
     padding-top: 94px;
+    padding-bottom: 94px;
+
 }
 
 .portfolio-filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
     padding-bottom: 50px;
+}
+
+.portfolio-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+
 }
 
 .portfolio-list-header {
